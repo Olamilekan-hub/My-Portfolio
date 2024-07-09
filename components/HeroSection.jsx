@@ -19,7 +19,7 @@ const HeaderSeaction = () => {
     }
 
     return (
-        <section className="mt-24">
+        <section className="mt-30">
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl mb-4 font-extrabold">

@@ -25,7 +25,7 @@ const Tab_Data = [
         content:(
             <ul>
                 <li>B.Sc: Computer Science (2021-2024)</li>
-                <li>AlxLX Africa: Software Engineer</li>
+                <li>Alx Africa: Software Engineer</li>
                 <li>Udemy Course: Angela Yu (Full stack Web Development)</li>
                 <li>WAEC: WASCE(2021)</li>
             </ul>
