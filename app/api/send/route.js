@@ -26,7 +26,7 @@
 //   }
 // }
 
-import mailgun from 'mailgun-js';
+import mailgun from 'mailgun.js';
 
 const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
