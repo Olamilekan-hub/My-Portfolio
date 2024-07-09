@@ -27,6 +27,8 @@
 // }
 
 import mailgun from 'mailgun.js';
+import { json } from 'body-parser'; // Ensure body parsing middleware is imported
+
 
 const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
@@ -41,6 +43,10 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Use body parsing middleware
+    await json()(req, res);
+
+    // Destructure properties from req.body
     const { email, subject, message } = req.body;
 
     const data = {
