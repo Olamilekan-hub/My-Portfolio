@@ -32,6 +32,7 @@ const mg = mailgun({
   apiKey: process.env.MAILGUN_API_KEY,
   domain: process.env.MAILGUN_DOMAIN,
 });
+
 const fromEmail = process.env.FROM_EMAIL;
 
 export default async function handler(req, res) {
@@ -62,4 +63,3 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Error sending email' });
   }
 }
-
